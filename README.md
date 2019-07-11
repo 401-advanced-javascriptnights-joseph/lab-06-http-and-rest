@@ -5,7 +5,7 @@
 ### Author: 401n13 Students
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
+* [submission PR](https://github.com/401-advanced-javascriptnights-joseph/simple-api/pull/1)
 
 #### Documentation
 * [api docs](https://app.swaggerhub.com/apis/JCode1986/simple-api/0.1)
