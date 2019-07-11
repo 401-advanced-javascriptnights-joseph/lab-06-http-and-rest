@@ -2,44 +2,36 @@
 
 ## Simple-API
 
-### Author: Joseph Hangarter
+### Author: 401n13 Students
 
 ### Links and Resources
 * [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
 
 #### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
+* [api docs](https://app.swaggerhub.com/apis/JCode1986/simple-api/0.1)
 
 ### Modules
-#### `modulename.js`
+#### `db.json` - file with categories and products
+#### `swagger.json` - file with categories and products
 
-##### Exported Values and Methods
-
-###### `foo(thing) -> string`
-Usage Notes or examples
-
-###### `bar(array) -> array`
-Usage Notes or examples
-
-### Setup
 #### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+* `local host` - 3000
 
 #### Running the app
 * `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
-  
-#### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+* Endpoint: /categories GET, POST
+* Endpoint: /categories/:id/ PUT, DELETE
+* Endpoint: /products GET, POST
+* Endpoint: /products/:id/ PUT, DELETE
+* Example inputs in CLI
+* GET
+  * http get http://localhost:3000/categories/1
+* POST (create)
+  * echo '{"id": 1, "description":"value","display_name": "value", "name":"value"}' | http post :3000/categories
+* PUT (update)
+  * echo '{"id": 1, "description":"value","display_name": "value", "name":"value"}' | http put :3000/categories
+* DELETE
+  * http delete http://localhost:3000/categories/1
 
 #### UML
-Link to an image of the UML for your application and response to events
+![UML](./images/UML.jpg)
